@@ -1,0 +1,323 @@
+/* BASIC PAGE SETUP */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+
+/* NAVIGATION */
+
+header {
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 14px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* SECTIONS */
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    scroll-margin-top: 70px;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 800px;
+}
+
+
+/* HOME */
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+
+/* PERSONAL INTRO */
+
+.personal-intro {
+    width: 330px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 240px;
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+    margin: auto;
+
+    border-radius: 12px;
+    border: 2px solid #222;
+}
+
+.personal-intro h2 {
+    margin-bottom: 5px;
+}
+
+.personal-intro p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram-link {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
+}
+
+
+/* LINKS */
+
+.normal-link {
+    color: #222;
+    font-weight: bold;
+}
+
+
+/* MAIN IMAGE */
+
+.main-image {
+    width: 100%;
+    max-width: 900px;
+
+    display: block;
+    margin-top: 30px;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #888;
+    padding: 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+/* TABLE IMAGES */
+
+.image-cell {
+    padding: 0;
+    width: 30%;
+    height: 140px;
+}
+
+.image-cell img {
+    width: 100%;
+    height: 140px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* VIDEO */
+
+.video-container {
+    position: relative;
+
+    width: 100%;
+    max-width: 850px;
+
+    aspect-ratio: 16 / 9;
+
+    margin-top: 25px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #999;
+}
+
+
+/* BUTTONS */
+
+button {
+    padding: 9px 15px;
+    margin: 5px;
+
+    border: 1px solid #555;
+
+    background: #fff;
+    color: #222;
+
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: #eee;
+}
+
+
+/* BACK TO TOP */
+
+#top-button {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 42px;
+    height: 42px;
+
+    display: none;
+
+    padding: 0;
+
+    font-size: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #ccc;
+
+    text-align: center;
+
+    padding: 25px 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal-intro {
+        width: 100%;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+
+    .image-cell {
+        height: 100px;
+    }
+
+    .image-cell img {
+        height: 100px;
+    }
+}
